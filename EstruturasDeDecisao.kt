@@ -14,10 +14,30 @@ fun main(args: Array<String>) {
     
     
     //WHEN
-     val x = true
-    when(x){
-        true -> println("Verdadeiro")
-    	false -> println("Falso")
-        else -> println("Nenhuma das opções")
+        fun main(args: Array<String>) {
+     
+        
+        /*
+     when( opcao ){
+        1,2 -> { 
+                println("Café puro")
+                println("Leite separado")
+            }
+            3 -> println("Chocolate quente")
+            else -> { 
+                println("Nenhuma opção selecionada")
+                println("Selecione uma opção!!")
+            }
+        } 
+        */
+        
+        var opcao = 1
+        var resultado = when( opcao ){
+        1 -> "Café puro"
+            2 -> "Chocolate quente"
+            else -> "Nenhuma opção selecionada"
+        }
+        println( resultado )
+        
     }
   }
